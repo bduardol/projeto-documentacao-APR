@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Documentação APR</title>
+    <title>Subir chopp</title>
+    <link rel="stylesheet" href="../../scr/styles.css">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
 </head>
@@ -79,25 +80,24 @@
             </div>
         </div>
         <p>No campo tabela escalonada, é o codigo referente da tabela, e cliente é o PDV que o GV mandou. Apos finalizar, basta salvar.</p>
-        <p>É nesta mesma tela que é feito a retirada do PDV tambem. Basta preencher os campos e apertar em excluir. Veremos isso mais pra frente.</p>  
+        <p class="highlight">É nesta mesma tela que é feito a retirada do PDV tambem. Basta segujir os mesmo passos, so que ao final, ao invez de salvar, deverá excluir</p>  
         <wbr>
           <li class="list-group-item">Em seguida, acesse a rotina (Promax) 01.25.08.10 para verificar se há saldo disponível.</li>
           <wbr>
           Nem sempre tem necessidade de ir nesta rotina, mas é bom sepre conferir.
           <div class="container">
            <div class="col-md-6">
-              <img src="..\..\assets\img\Rotina_chopp.jpeg" class="rounded img-thumbnail w-100" alt="...">
+              <img src="..\..\assets\img\adicionar_saldo_tabela.jpeg" class="rounded img-thumbnail w-100" alt="...">
             </div>
-
-
           <wbr>
-          <li class="list-group-item">O GV responsável deve inserir os dados necessários.</li>
+          <li class="list-group-item">Você deverar colocar a tabela, na qual op cliente esta cadastrado, e o cliente(PDV), tanto no final, quanto incial.</li>
           <wbr>
-          <li class="list-group-item">Após concluir a inserção dos dados, o GV responsável deve informar que finalizou.</li>
+          <li class="list-group-item">Após consultar, voce poderar verificar o saldo do cliente para determinados chopps da tabela pesquisadas.
+            Com isso, caso esteja zerado, poderar alterar o valor, para o GV responsavel poder digitar.
+          </li>
           <wbr>
-          <li class="list-group-item">Por fim, acesse a rotina 01.25.08.03 para remover o PDV, ou, alternativamente, faça o upload do template na rotina 01.25.08.09.</li>
+          <p class="highlight">Lembre-se: SEMPRE REMOVA A ASSOCIAÇÃO APOS O GV DIGITAR.</p>
       </ol>
-
     </div>
 
 

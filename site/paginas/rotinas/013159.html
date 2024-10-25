@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Documentação APR</title>
+    <title>013159</title>
+    <link rel="stylesheet" href="../../scr/styles.css">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
 </head>
@@ -79,40 +80,64 @@
             
             <div class="text-center">
               <img src="..\..\assets\img\grupo_gps.jpg" class="rounded img-thumbnail w-25" alt="...">
+          </div><br>
+        
+          <p>As informações consistem em:  </p>
+            <ol start="1" type="a"> 
+              <li>O codigo do PDV;</li> 
+              <li>A coordenada da localização.</li>
+          </ol>
+          <br>
+
+          <p>A coordenada tem o padrão : -xx.xxxxxx, -xx.xxxxxx, onde elas podem ter mais casas decimais, aumentando a precisão, porem para a atualização é necessario somente as 6 primerias casas decimais.
+          
+          Clicando na locallização que o RN passou, voce sera redirecionado para o Google Maps, onde voce conseguirá pegar as coordenadas, como na imagem:
+          </p>
+          <br>
+          <div class="container">
+            <div class="text-center">
+                <img src="..\..\assets\img\pegar_coordenada_maps.jpg" class="rounded img-thumbnail w-50" alt="...">
+            </div>
           </div>
-          <wbr>
-          <p>As informações consistem em: a) O codigo do PDV; b) A coordenada da localização.<br>
-          A coordenada tem o padrão : -xx.xxxxxx, -xx.xxxxxx, onde elas podem ter mais casas decimais, aumentando a precisão, porem para a atualização é necessario somente as 6 primerias casas decimais. </p>
+          <br>
+          
+          
           <li class="list-group-item">Apos coletar as informações, deve ser carregada no arquivo <I>Ajuste Coordenada - Semana X.xlsx</I>.</li>
-          <wbr>
+          <br>
           <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6">
-                    <img src="..\..\assets\img\Rotina_chopp.jpeg" class="rounded img-thumbnail w-100" alt="...">
+                <div class="text-center">
+                    <img src="..\..\assets\img\gerar_coordenadas.jpg" class="rounded img-thumbnail w-50" alt="...">
                 </div>
-                <div class="col-md-6">
-                    <img src="..\..\assets\img\adicionar_na_tabela.jpeg" class="rounded img-thumbnail w-100" alt="...">
-                </div>
-            </div>
-        </div>
-        <p>No campo tabela escalonada, é o codigo referente da tabela, e cliente é o PDV que o GV mandou. Apos finalizar, basta salvar.</p>
-        <p>É nesta mesma tela que é feito a retirada do PDV tambem. Basta preencher os campos e apertar em excluir. Veremos isso mais pra frente.</p>  
-        <wbr>
-          <li class="list-group-item">Em seguida, acesse a rotina (Promax) 01.25.08.10 para verificar se há saldo disponível.</li>
-          <wbr>
-          Nem sempre tem necessidade de ir nesta rotina, mas é bom sepre conferir.
+          </div><br>
+        <p>Voce devera adicionas os PDV e suas respectivas coordenadas no local indicado com o numero 1. Depois disso, será gerado, na parte indicada
+          pelo numero 2, as coordenadas formatadas para importação.
+        </p>
+          <li class="list-group-item">Em seguida, deverar copiar a coluna de exportação, para colocar no arquivo "GPS.CSV"</li><br>
+          <li class="list-group-item">
+            Não é necessário abrir este arquivo no Excel. Basta clicar com o botão direito do mouse e selecionar "Editar". O Bloco de Notas será aberto, onde você poderá apagar o conteúdo antigo e colar as novas informações.
+
+            Ao colar, você notará que automaticamente há uma "quebra de linha" para a próxima. Essa quebra deverá ser removida para evitar erros.
+         </li>
+         <br>
+          <li class="list-group-item">Nos passos finais, copie o arquivo para a pasta "dvs". Dica: copiar o arquivo para a pasta é mais rápido do que tentar salvá-lo diretamente nela.</li>
           <div class="container">
-           <div class="col-md-6">
-              <img src="..\..\assets\img\Rotina_chopp.jpeg" class="rounded img-thumbnail w-100" alt="...">
+            <div class="text-center">
+                <img src="..\..\assets\img\dvs.jpg" class="rounded img-thumbnail w-50" alt="...">
             </div>
+          </div>
+          <br>
+          
+          
+          
+          <li class="list-group-item">Para finalizar, vá até a rotina 01.31.59 e insira o nome do arquivo seguido de ".CSV". Certifique-se de escrever corretamente, respeitando as letras maiúsculas. Basta colocar o nome do arquivo no local indicado, seguindo as instruções, e confirmar.
 
-
-          <wbr>
-          <li class="list-group-item">O GV responsável deve inserir os dados necessários.</li>
-          <wbr>
-          <li class="list-group-item">Após concluir a inserção dos dados, o GV responsável deve informar que finalizou.</li>
-          <wbr>
-          <li class="list-group-item">Por fim, acesse a rotina 01.25.08.03 para remover o PDV, ou, alternativamente, faça o upload do template na rotina 01.25.08.09.</li>
+            Se tudo correr como esperado, uma mensagem de log confirmará a submissão.
+          </li><br>
+          <div class="container">
+            <div class="text-center">
+                <img src="..\..\assets\img\mandar_dvs.jpg" class="rounded img-thumbnail w-50" alt="...">
+            </div>
+          </div><br>      
       </ol>
 
     </div>
